@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8BB723C024D1A95000BFB4BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB723BF24D1A95000BFB4BE /* main.m */; };
+		8BB723C824D1A9A500BFB4BE /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB723C724D1A9A500BFB4BE /* Exercises.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B7CE32C24D31A7D003CAEBC /* grokking-algorithms-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grokking-algorithms-Swift.h"; sourceTree = "<group>"; };
 		8BB723BC24D1A95000BFB4BE /* grokking-algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "grokking-algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB723BF24D1A95000BFB4BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BB723C624D1A9A500BFB4BE /* grokking-algorithms-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grokking-algorithms-Bridging-Header.h"; sourceTree = "<group>"; };
+		8BB723C724D1A9A500BFB4BE /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				8BB723BF24D1A95000BFB4BE /* main.m */,
+				8BB723C724D1A9A500BFB4BE /* Exercises.swift */,
+				8BB723C624D1A9A500BFB4BE /* grokking-algorithms-Bridging-Header.h */,
+				8B7CE32C24D31A7D003CAEBC /* grokking-algorithms-Swift.h */,
 			);
 			path = "grokking-algorithms";
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 				TargetAttributes = {
 					8BB723BB24D1A95000BFB4BE = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -120,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB723C024D1A95000BFB4BE /* main.m in Sources */,
+				8BB723C824D1A9A500BFB4BE /* Exercises.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +189,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "grokking-algorithms";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -231,6 +241,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "grokking-algorithms";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -238,20 +249,37 @@
 		8BB723C424D1A95000BFB4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQW2LLNS8Z;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "grokking-algorithms/grokking-algorithms-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		8BB723C524D1A95000BFB4BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQW2LLNS8Z;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "grokking-algorithms/grokking-algorithms-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
