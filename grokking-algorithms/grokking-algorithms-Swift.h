@@ -213,6 +213,14 @@ SWIFT_CLASS("_TtC19grokking_algorithms16ChapterFourClass")
 - (NSInteger)maxNumericInNumerics:(NSArray<NSNumber *> * _Nonnull)numerics SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)binarySearchIndexForNumericWithNumeric:(NSInteger)numeric inArray:(NSArray<NSNumber *> * _Nonnull)numerics SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)countWithArray:(NSArray * _Nonnull)array SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<NSNumber *> * _Nonnull)quickSortNumericsWithNumerics:(NSArray<NSNumber *> * _Nonnull)numerics SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC19grokking_algorithms17ChapterSevenClass")
+@interface ChapterSevenClass : NSObject
+- (void)dijkstraAlgorithm;
+- (NSArray<NSString *> * _Nonnull)dijkstraAlgorithmForGraphWithGraph:(NSDictionary<NSString *, NSDictionary<NSString *, NSNumber *> *> * _Nonnull)graph cost:(NSInteger * _Nonnull)cost SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
