@@ -10,27 +10,83 @@ import XCTest
 
 class ChapterFourTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testMinSizeSquareInCanvasWithSize() {
+      //given
+      let chapter = ChapterFourClass()
+      let inputFirst = 1680
+      let inputSecond = 640
+      let expectedResult = 80
+      
+      //when
+      let result = chapter.euclidianAlgorithm(first: inputFirst, second: inputSecond)
+      
+      //then
+      XCTAssertEqual(expectedResult, result)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+  
+  func testSum() {
+    //given
+    let chapter = ChapterFourClass()
+    let input = [2, 4, 6]
+    let expectedResult = 12
+    
+    //when
+    let result = chapter.sum(numerics: input)
+    
+    //then
+    XCTAssertEqual(expectedResult, result)
+  }
+  
+  func testCount() {
+    //given
+    let chapter = ChapterFourClass()
+    let input = [2, 4, 6]
+    let expectedResult = 3
+    
+    //when
+    let result = chapter.count(array: input)
+    
+    //then
+    XCTAssertEqual(expectedResult, result)
+  }
+  
+  func testMaxNumeric() {
+    //given
+    let chapter = ChapterFourClass()
+    let input = [2, 4, 6]
+    let expectedResult = 6
+    
+    //when
+    let result = chapter.maxNumericIn(numerics: input)
+    
+    //then
+    XCTAssertEqual(expectedResult, result)
+  }
+  
+  func testBinarySearchRecursive() {
+    //given
+    let chapter = ChapterFourClass()
+    let input =  [2, 4, 6, 11, 100, 239, 1000]
+    let expectedResult = 2
+    
+    //when
+    let result = chapter.binarySearchRecursiveForNumeric(numeric: 6, inArray: input)
+    
+    //then
+    XCTAssertEqual(expectedResult, result)
+  }
+  
+  func testQuickSort() {
+    //given
+    let chapter = ChapterFourClass()
+    let input =  [2, 4, 1000, 6, 11, 100, 239, 5]
+    let expectedResult = [2, 4, 5, 6, 11, 100, 239, 1000]
+    
+    //when
+    let result = chapter.quickSortNumerics(numerics: input)
+    
+    //then
+    XCTAssertEqual(expectedResult, result)
+  }
 
 }

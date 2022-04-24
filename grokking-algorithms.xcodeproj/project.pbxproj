@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B43DCE42799BDCD005F9D11 /* ChapterFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43DCE32799BDCD005F9D11 /* ChapterFourTests.swift */; };
+		8B43DCE6279FF534005F9D11 /* ChapterSevenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43DCE5279FF534005F9D11 /* ChapterSevenTests.swift */; };
+		8B43DCE827A14568005F9D11 /* ChapterSixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43DCE727A14568005F9D11 /* ChapterSixTests.swift */; };
+		8B43DCEA27A2B7B6005F9D11 /* ChapterNineClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43DCE927A2B7B6005F9D11 /* ChapterNineClassTests.swift */; };
+		8B48A05B27946F2D00DED58A /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB723C724D1A9A500BFB4BE /* Exercises.swift */; };
+		8B48A05E2794706800DED58A /* ChapterOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48A05D2794706800DED58A /* ChapterOneTests.swift */; };
 		8BB723C024D1A95000BFB4BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB723BF24D1A95000BFB4BE /* main.m */; };
 		8BB723C824D1A9A500BFB4BE /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB723C724D1A9A500BFB4BE /* Exercises.swift */; };
 /* End PBXBuildFile section */
@@ -24,14 +30,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8B7CE32C24D31A7D003CAEBC /* grokking-algorithms-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grokking-algorithms-Swift.h"; sourceTree = "<group>"; };
+		8B43DCE02796E6D9005F9D11 /* grokking-algorithms-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grokking-algorithms-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B43DCE22796EA5C005F9D11 /* grokking-algorithms-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grokking-algorithms-Swift.h"; sourceTree = "<group>"; };
+		8B43DCE32799BDCD005F9D11 /* ChapterFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterFourTests.swift; sourceTree = "<group>"; };
+		8B43DCE5279FF534005F9D11 /* ChapterSevenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSevenTests.swift; sourceTree = "<group>"; };
+		8B43DCE727A14568005F9D11 /* ChapterSixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSixTests.swift; sourceTree = "<group>"; };
+		8B43DCE927A2B7B6005F9D11 /* ChapterNineClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterNineClassTests.swift; sourceTree = "<group>"; };
+		8B48A05427946DBE00DED58A /* grokking-algorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grokking-algorithmsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B48A05D2794706800DED58A /* ChapterOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterOneTests.swift; sourceTree = "<group>"; };
 		8BB723BC24D1A95000BFB4BE /* grokking-algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "grokking-algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB723BF24D1A95000BFB4BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8BB723C624D1A9A500BFB4BE /* grokking-algorithms-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grokking-algorithms-Bridging-Header.h"; sourceTree = "<group>"; };
 		8BB723C724D1A9A500BFB4BE /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B48A05127946DBE00DED58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BB723B924D1A95000BFB4BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B48A05527946DBE00DED58A /* grokking-algorithmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B48A05D2794706800DED58A /* ChapterOneTests.swift */,
+				8B43DCE32799BDCD005F9D11 /* ChapterFourTests.swift */,
+				8B43DCE5279FF534005F9D11 /* ChapterSevenTests.swift */,
+				8B43DCE727A14568005F9D11 /* ChapterSixTests.swift */,
+				8B43DCE927A2B7B6005F9D11 /* ChapterNineClassTests.swift */,
+			);
+			path = "grokking-algorithmsTests";
+			sourceTree = "<group>";
+		};
 		8BB723B324D1A95000BFB4BE = {
 			isa = PBXGroup;
 			children = (
 				8BB723BE24D1A95000BFB4BE /* grokking-algorithms */,
+				8B48A05527946DBE00DED58A /* grokking-algorithmsTests */,
 				8BB723BD24D1A95000BFB4BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				8BB723BC24D1A95000BFB4BE /* grokking-algorithms */,
+				8B48A05427946DBE00DED58A /* grokking-algorithmsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,10 +94,10 @@
 		8BB723BE24D1A95000BFB4BE /* grokking-algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				8BB723BF24D1A95000BFB4BE /* main.m */,
 				8BB723C724D1A9A500BFB4BE /* Exercises.swift */,
-				8BB723C624D1A9A500BFB4BE /* grokking-algorithms-Bridging-Header.h */,
-				8B7CE32C24D31A7D003CAEBC /* grokking-algorithms-Swift.h */,
+				8BB723BF24D1A95000BFB4BE /* main.m */,
+				8B43DCE02796E6D9005F9D11 /* grokking-algorithms-Bridging-Header.h */,
+				8B43DCE22796EA5C005F9D11 /* grokking-algorithms-Swift.h */,
 			);
 			path = "grokking-algorithms";
 			sourceTree = "<group>";
@@ -72,6 +105,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8B48A05327946DBE00DED58A /* grokking-algorithmsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B48A05827946DBE00DED58A /* Build configuration list for PBXNativeTarget "grokking-algorithmsTests" */;
+			buildPhases = (
+				8B48A05027946DBE00DED58A /* Sources */,
+				8B48A05127946DBE00DED58A /* Frameworks */,
+				8B48A05227946DBE00DED58A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "grokking-algorithmsTests";
+			productName = "grokking-algorithmsTests";
+			productReference = 8B48A05427946DBE00DED58A /* grokking-algorithmsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8BB723BB24D1A95000BFB4BE /* grokking-algorithms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BB723C324D1A95000BFB4BE /* Build configuration list for PBXNativeTarget "grokking-algorithms" */;
@@ -95,9 +145,13 @@
 		8BB723B424D1A95000BFB4BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Евгений Киртаев";
 				TargetAttributes = {
+					8B48A05327946DBE00DED58A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					8BB723BB24D1A95000BFB4BE = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
@@ -118,11 +172,35 @@
 			projectRoot = "";
 			targets = (
 				8BB723BB24D1A95000BFB4BE /* grokking-algorithms */,
+				8B48A05327946DBE00DED58A /* grokking-algorithmsTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8B48A05227946DBE00DED58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8B48A05027946DBE00DED58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B43DCEA27A2B7B6005F9D11 /* ChapterNineClassTests.swift in Sources */,
+				8B43DCE42799BDCD005F9D11 /* ChapterFourTests.swift in Sources */,
+				8B43DCE827A14568005F9D11 /* ChapterSixTests.swift in Sources */,
+				8B48A05E2794706800DED58A /* ChapterOneTests.swift in Sources */,
+				8B43DCE6279FF534005F9D11 /* ChapterSevenTests.swift in Sources */,
+				8B48A05B27946F2D00DED58A /* Exercises.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BB723B824D1A95000BFB4BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +213,51 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8B48A05927946DBE00DED58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQW2LLNS8Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "none.grokking-algorithmsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B48A05A27946DBE00DED58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQW2LLNS8Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "none.grokking-algorithmsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		8BB723C124D1A95000BFB4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -161,6 +284,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -220,6 +344,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -243,6 +368,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "grokking-algorithms";
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -250,7 +376,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WQW2LLNS8Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -259,7 +387,9 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "grokking-algorithms/grokking-algorithms-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/grokking-algorithms-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -269,7 +399,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WQW2LLNS8Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -278,7 +410,9 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "grokking-algorithms/grokking-algorithms-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/grokking-algorithms-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -286,6 +420,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B48A05827946DBE00DED58A /* Build configuration list for PBXNativeTarget "grokking-algorithmsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B48A05927946DBE00DED58A /* Debug */,
+				8B48A05A27946DBE00DED58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8BB723B724D1A95000BFB4BE /* Build configuration list for PBXProject "grokking-algorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

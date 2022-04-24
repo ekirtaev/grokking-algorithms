@@ -10,27 +10,39 @@ import XCTest
 
 class ChapterSixTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+  //6.1
+  func testBreadthFirstSearchInGraph61() {
+    //given
+    let chapter = ChapterSixClass()
+    let input: [String: [String]] = ["start": ["a", "c"],
+                                     "a": ["b", "finish"],
+                                     "c": ["b", "d"],
+                                     "d": ["finish"]]
+    let expectedResult = ["start", "a", "finish"]
+    
+    //when
+    let result = chapter.breadthFirstSearchInGraph(graph: input, startNode: "start", finishNode: "finish")
+    
+    //then
+    XCTAssertEqual(expectedResult, result)
+  }
+  
+  //6.2
+  func testBreadthFirstSearchInGraph62() {
+    //given
+    let chapter = ChapterSixClass()
+    let input: [String: [String]] = ["cab": ["cat", "car"],
+                                     "cat": ["mat", "bat"],
+                                     "car": ["cat", "bar"],
+                                     "mat": ["bat"],
+                                     "bar": ["mat"]]
+    let expectedResult = ["cab", "cat", "bat"]
+    
+    //when
+    let result = chapter.breadthFirstSearchInGraph(graph: input, startNode: "cab", finishNode: "bat")
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    //then
+    XCTAssertEqual(expectedResult, result)
+  }
 
 }
